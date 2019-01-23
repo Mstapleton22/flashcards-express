@@ -11,6 +11,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "pg": "^7.8.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mstapleton22/flashcards-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mstapleton22/flashcards-express/issues"
+  },
+  "homepage": "https://github.com/Mstapleton22/flashcards-express#readme"
 }
