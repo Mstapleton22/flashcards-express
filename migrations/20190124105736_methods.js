@@ -1,13 +1,13 @@
-
 exports.up = function (knex, Promise) {
-  return knex.schema.createTable('method', table => {
-    table.increments()
-    table.string('name').notNullable().defaultsTo('')
-    table.integer('description').notNullable().defaultsTo(0)
-    table.timestamps(true, true)
+  return knex.schema.createTable('methods', table => {
+      table.increments()
+      table.string('name').notNullable().defaultsTo('')
+      table.string('description').notNullable().defaultsTo('')
+      table.string('link').notNullable().defaultsTo('')
+      table.string('difficulty').notNullable().defaultsTo('')
   })
 };
 
 exports.down = function (knex, Promise) {
-  return knex.schema.dropTable('method')
+  return knex.schema.dropTable('methods')
 };
